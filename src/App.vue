@@ -32,15 +32,20 @@ const faqs: Array<FAQ> = [
 </script>
 
 <template>
-  <div class="flex flex-col justify-start items-center min-h-screen">
-    <div
-      class="relative flex flex-col desktop:flex-row desktop:justify-between desktop:px-20 m-[24em] pb-12 w-[21rem] desktop:w-[50rem] items-center bg-white rounded-3xl shadow-2xl">
+  <!-- Centers the card on the screen -->
+  <div class="flex flex-col justify-center items-center min-h-screen">
 
-      <div class="absolute flex flex-col gap-4 -top-28">
+    <!-- Card -->
+    <div
+      class="flex flex-col desktop:flex-row desktop:justify-end desktop:px-20 m-[24em] pb-12 w-[21rem] desktop:w-[50rem] items-center bg-white rounded-3xl shadow-2xl">
+
+      <!-- Woman Online Mobile -->
+      <div class="absolute flex flex-col gap-4 top-[275px]">
         <img class="w-60" src="./assets/img/illustration-woman-online-mobile.svg" alt="women-online-mobile">
         <img class="-mt-24" src="./assets/img/bg-pattern-mobile.svg" alt="background-shadow">
       </div>
 
+      <!-- FAQ Section -->
       <div class="flex flex-col items-center desktop:items-start gap-4">
         <p class="font-bold text-3xl pt-32 desktop:pt-10 text-dark-blue">FAQ</p>
         <Accordion v-for="fq of faqs" :key="fq.question" :question="fq.question" :answer="fq.answer"></Accordion>
