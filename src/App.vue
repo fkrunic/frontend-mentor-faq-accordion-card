@@ -33,10 +33,10 @@ const faqs: Array<FAQ> = [
 
 <template>
   <div class="flex flex-col justify-start items-center min-h-screen">
-    <div class="flex flex-col gap-4 m-[24em] pb-12 w-[21rem] items-center bg-white rounded-3xl shadow-2xl">
-      <img class="absolute top-[17.5rem] h-44" src="./assets/img/illustration-woman-online-mobile.svg" alt="women-online-mobile">
-      <img class="absolute" src="./assets/img/bg-pattern-mobile.svg" alt="background-shadow">
-      <p class="font-bold text-3xl pt-32 text-dark-blue">FAQ</p>
+    <div class="flex flex-col gap-4 m-[24em] pb-12 w-[21rem] desktop:w-[50rem] items-center desktop:items-end bg-white rounded-3xl shadow-2xl">
+      <img class="-mt-28 w-60" src="./assets/img/illustration-woman-online-mobile.svg" alt="women-online-mobile">
+      <img class="-mt-24" src="./assets/img/bg-pattern-mobile.svg" alt="background-shadow">
+      <p class="font-bold text-3xl pt-4 desktop:pt-10 text-dark-blue">FAQ</p>
       <Accordion 
         v-for="fq of faqs" 
         :key="fq.question"
