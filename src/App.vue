@@ -52,7 +52,7 @@ const faqs: Array<FAQ> = [
         ">
 
       <!-- Woman Online Desktop -->
-      <img class="hidden absolute desktop:block w-[28rem] -left-20 z-10" src="./assets/img/illustration-woman-online-desktop.svg" alt="woman-online">
+      <img class="hidden absolute desktop:block w-[28rem] -left-20 top-[1rem] z-10" src="./assets/img/illustration-woman-online-desktop.svg" alt="woman-online">
       <img class="hidden absolute desktop:block w-[50rem] -left-[27rem] -top-[15rem] z-0" src="./assets/img/bg-pattern-desktop.svg" alt="background">
 
       <!-- Woman Online Mobile -->
