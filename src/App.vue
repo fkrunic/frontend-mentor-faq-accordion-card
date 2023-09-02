@@ -17,7 +17,7 @@ const faqs: Array<FAQ> = [
   },
   {
     question: "How do I reset my password?",
-    answer: "Before logging in, there is a button to 'Reset Password'"
+    answer: "Before logging in, there is a button to 'Reset Password'."
   },
   {
     question: "How do I cancel my subscription?",
@@ -33,10 +33,10 @@ const faqs: Array<FAQ> = [
 
 <template>
   <div class="flex justify-center items-center min-h-screen">
-    <div class="flex flex-col w-80 items-center bg-white rounded-3xl">
+    <div class="flex flex-col gap-4 pb-12 w-[21rem] items-center bg-white rounded-3xl">
       <!-- <img class="absolute" src="./assets/img/illustration-woman-online-mobile.svg" alt="women-online-mobile"> -->
       <!-- <img class="absolute" src="./assets/img/bg-pattern-mobile.svg" alt="background-shadow"> -->
-      <p class="font-bold text-3xl">FAQ</p>
+      <p class="font-bold text-3xl pt-36">FAQ</p>
       <Accordion 
         v-for="fq of faqs" 
         :key="fq.question"
