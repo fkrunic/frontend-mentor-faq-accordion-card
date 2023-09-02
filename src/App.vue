@@ -32,18 +32,33 @@ const faqs: Array<FAQ> = [
 </script>
 
 <template>
+
   <!-- Centers the card on the screen -->
   <div class="flex flex-col justify-center items-center min-h-screen">
 
     <!-- Card -->
     <div
-      class="flex flex-col desktop:flex-row desktop:justify-end desktop:px-20 m-[24em] pb-12 w-[21rem] desktop:w-[50rem] items-center bg-white rounded-3xl shadow-2xl">
+      class="
+        relative 
+        flex flex-col desktop:flex-row desktop:justify-end 
+        desktop:px-20 m-[24em] 
+        desktop:w-[50rem] 
+        desktop:overflow-hidden
+        pb-12 w-[21rem] 
+        items-center 
+        bg-white 
+        rounded-3xl 
+        shadow-2xl
+        ">
+
+      <!-- Woman Online Desktop -->
+      <img class="hidden absolute desktop:block w-[28rem] -left-20" src="./assets/img/illustration-woman-online-desktop.svg" alt="woman-online">
 
       <!-- Woman Online Mobile -->
-      <div class="absolute flex flex-col gap-4 top-[275px]">
+      <div class="absolute desktop:hidden flex flex-col gap-4 -top-28">
         <img class="w-60" src="./assets/img/illustration-woman-online-mobile.svg" alt="women-online-mobile">
         <img class="-mt-24" src="./assets/img/bg-pattern-mobile.svg" alt="background-shadow">
-      </div>
+      </div>      
 
       <!-- FAQ Section -->
       <div class="flex flex-col items-center desktop:items-start gap-4">
