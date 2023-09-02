@@ -33,40 +33,55 @@ const faqs: Array<FAQ> = [
 
 <template>
 
-  <!-- Centers the card on the screen -->
+  <!-- Center card on screen -->
   <div class="flex flex-col justify-center items-center min-h-screen">
 
-    <!-- Card -->
-    <div
-      class="
-        relative 
-        flex flex-col desktop:flex-row desktop:justify-end 
-        desktop:px-20 m-[24em] 
-        desktop:w-[50rem] 
-        desktop:overflow-hidden
-        pb-12 w-[21rem] 
-        items-center 
-        bg-white 
-        rounded-3xl 
-        shadow-2xl
-        ">
+    <!-- Pseudo-container for anchoring floating box on desktop -->
+    <div class="relative">
 
-      <!-- Woman Online Desktop -->
-      <img class="hidden absolute desktop:block w-[28rem] -left-20 top-[1rem] z-10" src="./assets/img/illustration-woman-online-desktop.svg" alt="woman-online">
-      <img class="hidden absolute desktop:block w-[50rem] -left-[27rem] -top-[15rem] z-0" src="./assets/img/bg-pattern-desktop.svg" alt="background">
+        <!-- Floating box on desktop -->
+        <img 
+          class="hidden desktop:inline-block w-[11rem] left-[18.7rem] top-[33rem] absolute z-10" 
+          src="./assets/img/illustration-box-desktop.svg" 
+          alt="box"
+          >
 
-      <!-- Woman Online Mobile -->
-      <div class="absolute desktop:hidden flex flex-col gap-4 -top-28">
-        <img class="w-60" src="./assets/img/illustration-woman-online-mobile.svg" alt="women-online-mobile">
-        <img class="-mt-24" src="./assets/img/bg-pattern-mobile.svg" alt="background-shadow">
-      </div>      
+        <!-- Card -->
+        <div
+          class="
+            relative 
+            flex flex-col desktop:flex-row desktop:justify-end 
+            desktop:px-20 m-[24em] 
+            desktop:w-[50rem] 
+            w-[21rem]
+            desktop:overflow-hidden
+            pb-12  
+            items-center 
+            bg-white 
+            rounded-3xl 
+            shadow-2xl
+            z-0
+            ">
 
-      <!-- FAQ Section -->
-      <div class="flex flex-col items-center desktop:items-start gap-4">
-        <p class="font-bold text-3xl pt-32 desktop:pt-10 text-dark-blue">FAQ</p>
-        <Accordion v-for="fq of faqs" :key="fq.question" :question="fq.question" :answer="fq.answer"></Accordion>
-      </div>
+          <!-- Woman Online Desktop -->
+          <img class="hidden absolute desktop:block w-[28rem] -left-20 top-[1rem] z-10" src="./assets/img/illustration-woman-online-desktop.svg" alt="woman-online">
+          <img class="hidden absolute desktop:block w-[50rem] -left-[27rem] -top-[15rem] z-0" src="./assets/img/bg-pattern-desktop.svg" alt="background">
+
+          <!-- Woman Online Mobile -->
+          <div class="absolute desktop:hidden flex flex-col gap-4 -top-28">
+            <img class="w-60" src="./assets/img/illustration-woman-online-mobile.svg" alt="women-online-mobile">
+            <img class="-mt-24" src="./assets/img/bg-pattern-mobile.svg" alt="background-shadow">
+          </div>      
+
+          <!-- FAQ Section -->
+          <div class="flex flex-col items-center desktop:items-start gap-4">
+            <p class="font-bold text-3xl pt-32 desktop:pt-10 text-dark-blue">FAQ</p>
+            <Accordion v-for="fq of faqs" :key="fq.question" :question="fq.question" :answer="fq.answer"></Accordion>
+          </div>
+        </div>
     </div>
+
+
   </div>
 </template>
 
