@@ -21,7 +21,11 @@ function toggleAccordion() {
         :class="toggled ? 'font-bold text-dark-blue' : ''" 
       >{{ question }}
       </p>
-      <img class="h-2" src="../assets/img/icon-arrow-down.svg" alt="accordion-arrow">
+      <img 
+        class="h-2 transition duration-300" 
+        :class="toggled ? 'rotate-180' : ''"
+        src="../assets/img/icon-arrow-down.svg" 
+        alt="accordion-arrow">
     </div>
       <p class="text-xs text-semi-dark-grayish-blue pr-6" v-if="toggled">{{ answer }}</p>
   </div>
