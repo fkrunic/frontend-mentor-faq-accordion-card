@@ -16,7 +16,8 @@ export default {
       'soft-blue': 'hsl(240, 73%, 65%)',
       'dark-grayish-blue': 'hsl(237, 12%, 33%)',
       'semi-dark-grayish-blue': 'hsl(240, 6%, 50%)',
-      'light-grayish-blue': 'hsl(240, 5%, 91%)'
+      'light-grayish-blue': 'hsl(240, 5%, 91%)',
+      white: 'hsl(0, 0%, 100%)'
     },
     fontFamily: {
       'kumbh-sans': 'Kumbh Sans, sans-serif'
