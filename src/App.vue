@@ -41,7 +41,7 @@ const faqs: Array<FAQ> = [
 
         <!-- Floating box on desktop -->
         <img 
-          class="hidden desktop:inline-block w-[11rem] left-[18.7rem] top-[33rem] absolute z-10" 
+          class="hidden desktop:inline-block w-[11rem] -left-[5.3rem] top-[9rem] absolute z-10" 
           src="./assets/img/illustration-box-desktop.svg" 
           alt="box"
           >
@@ -51,7 +51,7 @@ const faqs: Array<FAQ> = [
           class="
             relative 
             flex flex-col desktop:flex-row desktop:justify-end 
-            desktop:px-20 m-[24em] 
+            desktop:px-20
             desktop:w-[50rem] 
             w-[21rem]
             desktop:overflow-hidden
